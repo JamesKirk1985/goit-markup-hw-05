@@ -501,6 +501,7 @@ img {
 }
 .footer-btn-icon {
     fill: var(--white);
+    margin-left: 16px;
 }
 .footer-btn-title {
     color: var(--white, #FFF);
