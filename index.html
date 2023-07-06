@@ -434,13 +434,16 @@
                     </div>
                 </div>
 
-                <label class="modal-form-field">
-                    <span class="modal-form-label">Comment</span>
-                    <textarea class="modal-form-text-input" name="comment" rows="8" placeholder="Text input"></textarea>
-                </label>
-                <label class="modal-forn-agreement">
-                    <input class="modal-form-checkbox visually-hidden" type="checkbox" value="accept"
-                        name="privat_pol" />
+                <div class="form-container-textarea">
+                    <label class="modal-form-field" for="user-comment">Comment</label>
+                    <textarea class="modal-form-text-input" id="user-comment" name="user-comment" rows="8"
+                        placeholder="Text input"></textarea>
+                </div>
+
+                <div class="form-conttainer-checkbox">
+
+                    <input class="modal-form-checkbox visually-hidden" id="user-privacy" type="checkbox" value="true"
+                        name="user-privacy" />
                     <span class="modal-form-custom-checkbox">
                         <svg class="modal-form-checkbox-item" width="16" height="16">
                             <use href="./images/icons.svg#icon-check" />
@@ -448,7 +451,8 @@
                     </span>
                     <span class="modal-form-desc">I accept the terms and conditions of the <a class="modal-form-link"
                             href="#">Privacy Policy</a></span>
-                </label>
+                    <label class="modal-forn-agreement"></label>
+                </div>
                 <button class="modal-form-btn" type="submit">Send</button>
 
             </form>
