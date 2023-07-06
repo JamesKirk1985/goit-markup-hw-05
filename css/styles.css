@@ -503,17 +503,6 @@ img {
     fill: var(--white);
     margin-left: 16px;
 }
-.footer-btn-title {
-    color: var(--white, #FFF);
-    text-align: center;
-
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-}
 .footer-scribe-btn:hover,
 .footer-scribe-btn:focus{
     background-color: var(--ocean);
