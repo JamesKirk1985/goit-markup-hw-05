@@ -433,6 +433,7 @@ img {
     justify-content: flex-start;
     gap: 16px;
     align-items: center;
+    margin-right: 80px;
 }
 .social-icon-container {
     width: 40px;
@@ -453,6 +454,63 @@ img {
 .footer-link-icon:focus {
     background-color: #31d0aa;
 }
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+.fooret-input {
+    display: block;
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    color: var(--white);
+}
+.fooret-input::placeholder {
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+}
+.footer-scribe-btn {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+}
+.footer-btn-icon {
+    fill: var(--white);
+}
+.footer-btn-title {
+    color: var(--white, #FFF);
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+}
+.footer-scribe-btn:hover,
+.footer-scribe-btn:focus{
+    background-color: var(--ocean);
+}
+
+
+
+
+
 /* main-portfolio */ 
 .portfolio {
     padding-top: 96px;
@@ -674,28 +732,114 @@ img {
 }
 .modal-form-field {
     display: block;
-    margin-bottom: 26px;
+    margin-bottom: 8px;
     position: relative;
 }
 .modal-form-input {
     width: 100%;
     height: 40px;
-    border-radius: 4px;[]
+    border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     padding: 11px 38px 11px 38px;
     background-color: transparent;
     font-size: 18px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 .modal-form-input:focus {
-    border-color: red;
+    border-color: var(--brand-color-blue);
 }
 .model-input-icon {
     position: absolute;
     bottom: 8px;
     left: 16px;
+    fill: var(--background-dark);
 }
-.modal-form-input:focus .model-input-icon {
-    fill: red;
+.modal-form-input:focus + .model-input-icon {
+    fill: var(--brand-color-blue);
+}
+.modal-form-text-input {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding: 8px 16px;
+    background-color: transparent;
+    font-size: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
+    resize: none;
+}
+.modal-form-text-input::placeholder {
+    color: var(--lightslate);
+    padding: 8px 0;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17px;
+    letter-spacing: 0.48px;
+}
+.modal-form-text-input:focus {
+    border-color: var(--brand-color-blue);
+}
+.modal-form-btn {
+    display: block;
+    color: var(--white, #FFF);
+    text-align: center;
+    width: 169px;
+    height: 56px;    
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+.modal-forn-agreement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.modal-form-checkbox:checked {
+   width: 40px;
+   height: 40px;
+}
+.modal-form-custom-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #FCFCFC;
+    transition:
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+    background-color: var(--brand-color-blue);
+    border-color: var(--brand-color-blue);
+}
+.modal-form-checkbox-item {
+    opacity: 0;
+}
+.modal-form-desc {
+    color: #8E8F99;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    user-select: none;
 }
 /* . */
 @keyframe model-animation {
