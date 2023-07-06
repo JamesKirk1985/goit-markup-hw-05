@@ -709,16 +709,17 @@ img {
 .modal-caption {
     display: block;
     width: 360px;
-    margin: 72px auto 16px auto;
+    margin: 0 auto 16px auto;
     height: 24px;
     font-size: 16px;
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     color: var(--navyblue, #2E2F42);
     text-align: center;
+}
+.form-container {
+    margin-bottom: 8px;
 }
 .modal-form-label {
     color: var(--lightslate);
