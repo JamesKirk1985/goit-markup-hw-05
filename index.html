@@ -402,13 +402,15 @@
             <p class="modal-caption">Leave your contacts and we will call you back</p>
             <form class="modal-form" name="form_order_service">
                 <div class="form-container">
-                    <label class="modal-form-field">
-                        <span class="modal-form-label">Name</span>
-                        <input class="modal-form-input" type="text" name="user_name" placeholder="Your name" />
+                    <label class="modal-form-field" for="user-name">Name</label>
+                    <div class="input-container">
+                        <input class="modal-form-input" id="user-name" type="text" name="user-name"
+                            placeholder="Your name" />
                         <svg class="model-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person-black-18dp-1" />
                         </svg>
-                    </label>
+                    </div>
+
                     <label class="modal-form-field">
                         <span class="modal-form-label">Phone</span>
                         <input class="modal-form-input" type="tel" name="phone-num" placeholder="Phone number" />
