@@ -859,9 +859,9 @@ img {
     fill: var(--cloud);
 }
 
-.modal-form-checkbox-icon {
+/* .modal-form-checkbox-icon {
     opacity: 0;
-}
+} */
 .modal-form-desc {
     color: #8E8F99;
     font-family: Roboto;
