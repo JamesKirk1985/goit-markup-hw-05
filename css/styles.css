@@ -487,7 +487,6 @@ img {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     min-width: 165px;
     height: 40px;
     border-radius: 4px;
@@ -661,7 +660,6 @@ img {
 .modal {
     min-height: 584px;
     width: 408px;
-    height: 584px;
     border-radius: 4px;
     background: var(--dairy);
     box-shadow:
